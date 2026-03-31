@@ -33,6 +33,10 @@ HW-09-02
 
 ![round-robin](img/1.3.png)
 
+#### 4.  Статистика 
+
+![statistik](img/2.2.png)
+
 
 ### Задание 2
 
@@ -51,12 +55,20 @@ HW-09-02
 
 ![Weighted Round Robin](img/2.1.png)
 
-#### 2. Статистика
+#### 2. Ответ сервера при обращении без доменнного имени
 
-![Other.local](img/2.2.png)
+![Other.local](img/2.3.png)
 
 ### Задание 3
 
 
 
 
+Полезные команды
+
+```
+sudo haproxy -f /etc/haproxy/haproxy.cfg -c
+sudo journalctl -xeu haproxy.service --no-pager -n 50
+sudo tail -20 /var/log/haproxy.log
+
+```
